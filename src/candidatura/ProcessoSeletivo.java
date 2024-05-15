@@ -5,11 +5,11 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class ProcessoSeletivo {
     public static void main(String[] args) {
-        // analisarCandidato(1999.0);
-        // analisarCandidato(2000.0);
-        // analisarCandidato(2200.0);
-        // selecionarCandidatosComBaseNoSalario();
-        // imprimirSelecionados();
+        analisarCandidato(1999.0);
+        analisarCandidato(2000.0);
+        
+        selecionarCandidatosComBaseNoSalario();
+        imprimirSelecionados();
         contatarCandidatos();
     }
 
