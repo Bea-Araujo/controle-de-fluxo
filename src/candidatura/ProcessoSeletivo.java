@@ -7,7 +7,8 @@ public class ProcessoSeletivo {
         // analisarCandidato(1999.0);
         // analisarCandidato(2000.0);
         // analisarCandidato(2200.0);
-        selecionarCandidatosComBaseNoSalario();
+        // selecionarCandidatosComBaseNoSalario();
+        imprimirSelecionados();
     }
 
     static void analisarCandidato(double expectativaSalarial){
@@ -33,6 +34,13 @@ public class ProcessoSeletivo {
                 System.out.println("Candidato selecionado");
                 candidatosSelecionados++;
             }
+        }
+    }
+
+    static void imprimirSelecionados() {
+        String[] candidatos = {"FELIPE","MÁRCIA","JULIA","PAULO","AUGUSTO"};
+        for (int i=0; i < candidatos.length; i++) {
+            System.out.println("Candidato nº" + (i + 1) + ": " + candidatos[i]);
         }
     }
 
