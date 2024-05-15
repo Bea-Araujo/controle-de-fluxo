@@ -61,12 +61,12 @@ public class ProcessoSeletivo {
         do {
             atendeu = atender();
             tentativasRealizadas++;
-            deveriaContinuar = atendeu || tentativasRealizadas > 3 ? false : true;
+            deveriaContinuar = atendeu || tentativasRealizadas == 3 ? false : true;
 
-        } while( deveriaContinuar && tentativasRealizadas <= 3);
+        } while( deveriaContinuar && tentativasRealizadas < 3);
 
         if (atendeu) System.out.println("Candidado " + candidato + " atendeu");
-        else System.out.println("Candidado " + candidato + " não atendeu. Nº de tentativas " + (tentativasRealizadas - 1));
+        else System.out.println("Candidado " + candidato + " não atendeu. Nº de tentativas " + (tentativasRealizadas));
     }
 
     static boolean atender(){
